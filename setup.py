@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='apispec_restful',
-    version='0.1.0-dev0',
+    version='0.1.0-dev1',
     license='BSD',
     author='Andrew Pashkin',
     author_email='andrew.pashkin@gmx.co.uk',

@@ -21,7 +21,7 @@ def path_from_resource(spec, api, resource, **kwargs):
     else:
         raise RuntimeError
 
-    path = re.sub(r'<(?:[^:<>]+:)?([^<>]+)>', '{\1}', rule.rule)
+    path = re.sub(r'<(?:[^:<>]+:)?([^<>]+)>', r'{\1}', rule.rule)
 
     operations = {}
     for method in map(str.lower, resource.methods):
